@@ -26,12 +26,24 @@ namespace DevoirLaVieDeBob
 {
     class Program
     {
-        /*
         public class compteBancaire
         {
             public string Nom {  get; }
-            public string Argent {  get; }
+            public float Argent {  get; }
+
+            // Constructeur
+            public compteBancaire()
+            {
+                Nom = "";
+                Argent = 0.0f;
+            }
+
+            // Remplace Console.Writeline
+            public override string ToString()
+            {
+                return $"nom = {Nom}\nArgent = {Argent}";
+            }
+
         }
-        */
     }
 }
