@@ -1,49 +1,37 @@
 ﻿
-/*
-Bob à un compte bancaire à son nom.
-22,50$/h.
-2 animaux.
-les animaux laisse un Console.WriteLine "Miaou" et "Wouff" quands il sont faim.
-5$ pour le chat et 8$ pour le chien.
-lorsque nourrit, une date est marquée.
-    À chaque 10h pour le chat
-    À chaque 8h pour le chien
+compteBancaire Bob = new compteBancaire("Bob", 100.00f, a);
+exempleClass2 a = new exempleClass2();
+Console.WriteLine(Bob);
 
-Modéliser et créer toutes les classes, propriétés et méthodes nécessaires pour
-représenter la situation. S'assurer que :
-
-Bob puisse travailler, manipuler son argent et nourrir ses animaux. Les animaux
-puissent s'exprimer et manger selon les restrictions imposées.D'ajouter une
-fonction qui permet d'avancer le temps.
-
-
-Création d'un diagramme.
-Clique-droit sur le projet "LaVieDeBob", glissez la sourie sur "ajouter", puis
-"nouvel élément" et choisissez "diagramme de classse".
-*/
-
-namespace DevoirLaVieDeBob
+public class compteBancaire
 {
-    class Program
+    // set; ou private_set ou ___
+    public string Nom { get; }
+    public float Argent { get; set; }
+    public exempleClass2 euuuh { get; set; }
+
+    // +----- Constructeur -----+
+    public compteBancaire(string nom, float argent, exempleClass2 euuuh)
     {
-        public class compteBancaire
-        {
-            public string Nom {  get; }
-            public float Argent {  get; }
-
-            // Constructeur
-            public compteBancaire()
-            {
-                Nom = "";
-                Argent = 0.0f;
-            }
-
-            // Remplace Console.Writeline
-            public override string ToString()
-            {
-                return $"nom = {Nom}\nArgent = {Argent}";
-            }
-
-        }
+        Nom = nom;
+        Argent = argent;
+        euuuh = euuuh;
     }
+
+    // +----- Méthodes -----+
+    public void ExempleMethode(int nombres = 1)
+    {
+        Argent += nombres;
+    }
+
+    // Remplace Console.Writeline
+    public override string ToString()
+    {
+        return $"nom = {Nom}\nArgent = {Argent}";
+    }
+}
+
+public class exempleClass2
+{
+
 }

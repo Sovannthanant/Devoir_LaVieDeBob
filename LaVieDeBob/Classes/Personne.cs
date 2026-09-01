@@ -1,27 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace LaVieDeBob.Classes
 {
     internal class Personne
     {
-        public int nom
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public int prénom
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
+        // Déclarations des propriétés.
+        public string nom { get; set; }
+        public string prénom { get; set; }
+        
+        // Déclarations des méthodes.
         public void Travailler()
         {
             throw new System.NotImplementedException();
