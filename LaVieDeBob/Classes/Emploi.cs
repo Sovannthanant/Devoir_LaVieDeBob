@@ -1,27 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace LaVieDeBob.Classes
 {
     internal class Emploi
     {
-        public int salaire
+        // Déclarations des propriétés.
+        public int salaire { get; set; }
+        public int titre { get; set; }
+
+        // Déclaration de constructeur.
+        public Emploi(float salaire_donne, string titre_donne)
         {
-            get => default;
-            set
-            {
-            }
+            float salaire = salaire_donne;
         }
 
-        public int titre
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-       
+        // Déclarations des méthodes.
+        // Pas de méthodes pour cette classe.
     }
 }

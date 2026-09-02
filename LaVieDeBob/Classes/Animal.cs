@@ -1,27 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace LaVieDeBob.Classes
 {
     internal class Animal
     {
-        public int nom
+        // Déclarations des propriétés.
+        public int nom { get; set; }
+        public int cout { get; set; }
+
+        // Déclaration de constructeur.
+        public Animal(string nom_donne, float cout_donne)
         {
-            get => default;
-            set
-            {
-            }
+            string nom = nom_donne;
+            float cout = cout_donne;
         }
 
-        public int cout
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
+        // Déclarations des méthodes.
         public void Manger()
         {
             throw new System.NotImplementedException();

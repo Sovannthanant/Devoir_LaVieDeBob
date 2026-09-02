@@ -1,19 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace LaVieDeBob.Classes
 {
     internal class Compte
     {
-        public int solde
+        // Déclarations des propriétés.
+        public int solde { get; set; }
+
+        // Déclaration de constructeur.
+        public Compte(float solde_donne)
         {
-            get => default;
-            set
-            {
-            }
+            float solde = solde_donne;
         }
 
+        // Déclarations des méthodes.
         public void Consulter()
         {
             throw new System.NotImplementedException();
