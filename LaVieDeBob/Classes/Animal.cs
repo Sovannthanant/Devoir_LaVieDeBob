@@ -1,7 +1,7 @@
 ﻿
 namespace LaVieDeBob.Classes
 {
-    internal class Animal
+    public abstract class Animal
     {
         // Déclarations des propriétés.
         public int nom { get; set; }
