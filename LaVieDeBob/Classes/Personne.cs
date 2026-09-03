@@ -6,27 +6,30 @@ namespace LaVieDeBob.Classes
         // Déclarations des propriétés.
         public string Nom { get; set; }
         public string Prenom { get; set; }
+        public float Argent { get; set; }
         public Emploi Metier { get; set; }
 
         // Déclaration de constructeur.
-        public Personne(string nom_donne, string prenom_done, Emploi metier_donne)
+        public Personne(string nom_donne, string prenom_donne, float argent_donne ,
+            Emploi metier_donne)
         {
             Nom = nom_donne;
-            Prenom = prenom_done;
+            Prenom = prenom_donne;
+            Argent = argent_donne;
             Metier = metier_donne;
         }
 
         // Déclarations des méthodes.
-        public float Travailler(int heures)
+        public void Travailler(int heures)
         {
             /// Retourne une paye avec le salaire du "Metier" et des "heures" données.
             float salaire = Metier.Salaire;
-            float paye = salaire * heures;
-            return paye;
+            Argent += salaire * heures;
         }
 
         public void Nourrir()
         {
+            /// TODO: Fonction qui nourrit un animal.
             throw new System.NotImplementedException();
         }
 
@@ -35,11 +38,12 @@ namespace LaVieDeBob.Classes
             /// Retourne un string spécifique quand "Console.Write()".
             if (Metier != null)
             {
-                return $"Nom = {Nom}\nPrenom = {Prenom}\nEmploi = {Metier.Titre}";
+                return $"Nom = {Nom} {Prenom}\nEmploi = {Metier.Titre}";
             }
+            /// Si la personne est non employé.
             else
             {
-                return $"Nom = {Nom}\nPrenom = {Prenom}";
+                return $"Nom = {Nom} {Prenom}";
             }
         }
 

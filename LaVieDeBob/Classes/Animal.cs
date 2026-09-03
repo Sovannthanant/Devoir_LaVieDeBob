@@ -4,14 +4,14 @@ namespace LaVieDeBob.Classes
     public abstract class Animal
     {
         // Déclarations des propriétés.
-        public int nom { get; set; }
-        public int cout { get; set; }
+        public string Nom { get; set; }
+        public float Cout { get; set; }
 
         // Déclaration de constructeur.
         public Animal(string nom_donne, float cout_donne)
         {
-            string nom = nom_donne;
-            float cout = cout_donne;
+            Nom = nom_donne;
+            Cout = cout_donne;
         }
 
         // Déclarations des méthodes.
@@ -22,7 +22,8 @@ namespace LaVieDeBob.Classes
 
         public void Exprimer()
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine($"*Son d'animal*");
         }
+
     }
 }

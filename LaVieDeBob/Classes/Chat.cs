@@ -1,7 +1,7 @@
 ﻿
 namespace LaVieDeBob.Classes
 {
-    class Chat : Animal
+    public class Chat : Animal
     {
         // Déclarations des propriétés parent.
         public Chat(string nom, float cout) : base(nom, cout) { }

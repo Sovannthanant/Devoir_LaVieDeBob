@@ -2,6 +2,9 @@
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="LaVieDeBob.Classes.Animal">
     <Position X="8" Y="4" Width="1.5" />
+    <Members>
+      <Method Name="Animal" Hidden="true" />
+    </Members>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAABAAIAAIAAAQAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Animal.cs</FileName>
@@ -23,22 +26,31 @@
   </Class>
   <Class Name="LaVieDeBob.Classes.Emploi">
     <Position X="3" Y="4" Width="1.5" />
+    <Members>
+      <Method Name="Emploi" Hidden="true" />
+    </Members>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAEEAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEACABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Emploi.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LaVieDeBob.Classes.Compte">
     <Position X="5.5" Y="4" Width="1.5" />
+    <Members>
+      <Method Name="Compte" Hidden="true" />
+    </Members>
     <TypeIdentifier>
-      <HashCode>AAAAIAAAAABAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAg=</HashCode>
+      <HashCode>AAAAIAAAAEBAAAAEAAAAAAAAACAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>Classes\Compte.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LaVieDeBob.Classes.Personne">
     <Position X="5.5" Y="1" Width="1.5" />
+    <Members>
+      <Method Name="Personne" Hidden="true" />
+    </Members>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAIAAAIACAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEIAAAIAAAACQAAAAAACAAAAAAAAA=</HashCode>
       <FileName>Classes\Personne.cs</FileName>
     </TypeIdentifier>
   </Class>

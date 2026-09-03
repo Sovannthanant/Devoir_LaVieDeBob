@@ -18,7 +18,7 @@ namespace LaVieDeBob.Classes
         public override string ToString()
         {
             /// Retourne un string spécifique quand "Console.Write()".
-            return $"Titre = {Titre}\nArgent = {Salaire}";
+            return $"Titre = {Titre}\nSalaire = {Salaire}$/h";
         }
 
     }
