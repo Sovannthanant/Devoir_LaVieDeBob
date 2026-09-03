@@ -57,11 +57,6 @@ namespace LaVieDeBob.Classes
             }
         }
 
-        public override string ToString()
-        {
-            /// Retourne un string spécifique quand "Console.Write()".
-            return $"Utilisateur = {Utilisateur.Nom} {Utilisateur.Prenom}\n" +
-                $"Solde = {Solde}$";
-        }
+        
     }
 }

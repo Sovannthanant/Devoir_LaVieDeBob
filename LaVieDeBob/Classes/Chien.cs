@@ -10,6 +10,11 @@ namespace LaVieDeBob.Classes
         // Le constructeur à déjà été fait dans la classe parent.
 
         // Déclarations des méthodes.
-        // Les méthodes ont déjà été fait dans la classe parent.
+        // Plupart des méthodes ont déjà été fait dans la classe parent.
+        public void Exprimer()
+        {
+            /// Retourne le son de l'animal en Console.Write().
+            Console.WriteLine($"Wouff");
+        }
     }
 }

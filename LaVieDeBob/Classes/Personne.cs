@@ -38,12 +38,16 @@ namespace LaVieDeBob.Classes
             /// Retourne un string spécifique quand "Console.Write()".
             if (Metier != null)
             {
-                return $"Nom = {Nom} {Prenom}\nEmploi = {Metier.Titre}";
+                return $"+-----+-----+-----+-----+\n" +
+                    $"Information de la personne.\n" +
+                    $"Nom/Prenom = {Nom} {Prenom}\nEmploi = {Metier.Titre}";
             }
             /// Si la personne est non employé.
             else
             {
-                return $"Nom = {Nom} {Prenom}";
+                return $"+-----+-----+-----+-----+\n" +
+                    $"Information de la personne.\n" +
+                    $"Nom = {Nom} {Prenom}";
             }
         }
 
