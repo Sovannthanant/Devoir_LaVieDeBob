@@ -1,53 +1,66 @@
 ﻿
 namespace LaVieDeBob.Classes
 {
-    internal class Personne
+    public class Personne
     {
         // Déclarations des propriétés.
-        public string Nom { get; set; }
-        public string Prenom { get; set; }
-        public float Argent { get; set; }
-        public Emploi Metier { get; set; }
+        // Toujours get; et private set; pour ne pas changer.
+        public string Nom { get; private set; }
+        public string Prenom { get; private set; }
+        public Emploi Emploi { get; }
+        public Compte Compte { get; }
+        
 
-        // Déclaration de constructeur.
-        public Personne(string nom_donne, string prenom_donne, float argent_donne ,
-            Emploi metier_donne)
+        // Déclaration du constructeur.
+        public Personne(string prenom, string nom, string titreEmploi, float salaire)
         {
-            Nom = nom_donne;
-            Prenom = prenom_donne;
-            Argent = argent_donne;
-            Metier = metier_donne;
+            Prenom = prenom;
+            Nom = nom;
+            Emploi = new Emploi(titreEmploi, salaire);
+            Compte = new Compte();
         }
+
 
         // Déclarations des méthodes.
-        public void Travailler(int heures)
+        public float Travailler(int heures)
         {
-            /// Retourne une paye avec le salaire du "Metier" et des "heures" données.
-            float salaire = Metier.Salaire;
-            Argent += salaire * heures;
+            /// Retourne une paye après que la personne ait travailler des heures.
+            /// Param "heures": Nombres d'heures travaillées.
+            /// Return : Le salaire gagné.
+            /// Exception : ArgumentOutOfRangeException
+            
+            if (heures < 0)
+                throw new ArgumentOutOfRangeException("ERREUR: Heures doit être positif.");
+
+            float salaireGagne = heures * Emploi.Salaire;
+            Compte.Deposer(salaireGagne);
+            return salaireGagne;
         }
 
-        public void Nourrir()
+
+        public void Nourrir(DateTime heureRepas)
         {
-            /// TODO: Fonction qui nourrit un animal.
+            /// TODO: Nourrir l'animal et retirer le montant du repas du compte bancaire.
             throw new System.NotImplementedException();
         }
+
 
         public override string ToString()
         {
             /// Retourne un string spécifique quand "Console.Write()".
-            if (Metier != null)
+            /// Si la personne est employé.
+            if (Emploi != null)
             {
                 return $"+-----+-----+-----+-----+\n" +
                     $"Information de la personne.\n" +
-                    $"Nom/Prenom = {Nom} {Prenom}\nEmploi = {Metier.Titre}";
+                    $"Prenom/Nom = {Prenom} {Nom} | Emploi = {Emploi.Titre}";
             }
             /// Si la personne est non employé.
             else
             {
                 return $"+-----+-----+-----+-----+\n" +
                     $"Information de la personne.\n" +
-                    $"Nom = {Nom} {Prenom}";
+                    $"Prenom/Nom = {Prenom} {Nom}";
             }
         }
 

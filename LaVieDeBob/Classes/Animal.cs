@@ -9,7 +9,7 @@ namespace LaVieDeBob.Classes
         public bool Faim { get; set; }
 
         // Déclaration de constructeur.
-        public Animal(string nom_donne, float cout_donne)
+        protected Animal(string nom_donne, float cout_donne)
         {
             Nom = nom_donne;
             Cout = cout_donne;
@@ -26,10 +26,13 @@ namespace LaVieDeBob.Classes
             }
         }
 
-        public void Exprimer()
+        /* public asbstract ___() }{}, doit être mis dans les classes
+         enfants. */
+
+        public string Exprimer()
         {
             /// Retourne le son de l'animal en Console.Write().
-            Console.WriteLine($"*Son d'animal*");
+            return$"*Son d'animal*";
         }
 
     }

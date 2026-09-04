@@ -1,18 +1,20 @@
 ﻿
 namespace LaVieDeBob.Classes
 {
-    internal class Emploi
+    public class Emploi
     {
         // Déclarations des propriétés.
         public string Titre { get; set; }
         public float Salaire { get; set; }
 
-        // Déclaration de constructeur.
-        public Emploi(string titre_donne, float salaire_donne)
+
+        // Déclaration du constructeur.
+        public Emploi(string titre, float salaire)
         {
-            Titre = titre_donne;
-            Salaire = salaire_donne;
+            Titre = titre;
+            Salaire = salaire;
         }
+
 
         // Déclarations des méthodes.
         public override string ToString()
@@ -20,7 +22,7 @@ namespace LaVieDeBob.Classes
             /// Retourne un string spécifique quand "Console.Write()".
             return $"+-----+-----+-----+-----+\n" +
                 $"Information de l'emploi\n" +
-                $"Titre = {Titre}\nSalaire = {Salaire}$/h";
+                $"Titre = {Titre} | Salaire = {Salaire}$/h";
         }
 
     }
