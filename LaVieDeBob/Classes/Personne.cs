@@ -10,7 +10,6 @@ namespace LaVieDeBob.Classes
         public Emploi Emploi { get; }
         public Compte Compte { get; }
         
-
         // Déclaration du constructeur.
         public Personne(string prenom, string nom, string titreEmploi, float salaire)
         {
@@ -20,15 +19,13 @@ namespace LaVieDeBob.Classes
             Compte = new Compte();
         }
 
-
         // Déclarations des méthodes.
         public float Travailler(int heures)
         {
             /// Retourne une paye après que la personne ait travailler des heures.
             /// Param "heures": Nombres d'heures travaillées.
             /// Return : Le salaire gagné.
-            /// Exception : ArgumentOutOfRangeException
-            
+            /// Exception : ArgumentOutOfRangeException.
             if (heures < 0)
                 throw new ArgumentOutOfRangeException("ERREUR: Heures doit être positif.");
 
@@ -37,13 +34,11 @@ namespace LaVieDeBob.Classes
             return salaireGagne;
         }
 
-
         public void Nourrir(DateTime heureRepas)
         {
             /// TODO: Nourrir l'animal et retirer le montant du repas du compte bancaire.
             throw new System.NotImplementedException();
         }
-
 
         public override string ToString()
         {

@@ -7,14 +7,12 @@ namespace LaVieDeBob.Classes
         public string Titre { get; set; }
         public float Salaire { get; set; }
 
-
         // Déclaration du constructeur.
         public Emploi(string titre, float salaire)
         {
             Titre = titre;
             Salaire = salaire;
         }
-
 
         // Déclarations des méthodes.
         public override string ToString()

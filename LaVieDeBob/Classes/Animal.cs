@@ -26,7 +26,7 @@ namespace LaVieDeBob.Classes
             }
         }
 
-        /* public asbstract ___() }{}, doit être mis dans les classes
+        /* public asbstract ___() {}, doit être mis dans les classes
          enfants. */
 
         public string Exprimer()
