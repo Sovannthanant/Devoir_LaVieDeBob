@@ -4,7 +4,7 @@ namespace LaVieDeBob.Classes
     public class Compte
     {
         // Déclarations des propriétés.
-        public float Solde { get; private set; }
+        public float Solde { get; set; }
         
         // Déclaration de constructeur.
         public Compte(float soldeInitial = 0)

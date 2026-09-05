@@ -6,21 +6,21 @@
       <Method Name="Animal" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAABAAIAAIAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAgAAAAAAAAAAAAABAAABQIACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Animal.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LaVieDeBob.Classes.Chat" Collapsed="true">
     <Position X="5.5" Y="7" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Chat.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LaVieDeBob.Classes.Chien" Collapsed="true">
     <Position X="8" Y="7" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Chien.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -40,7 +40,7 @@
       <Method Name="Compte" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>AAAAIAAAAEBAAAAEAAAAAAAAACAAAAAAAAAAAAAAAAg=</HashCode>
+      <HashCode>AAAAIAAAAABAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>Classes\Compte.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -50,7 +50,7 @@
       <Method Name="Personne" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEIAAAIAAAACQAAAAAACAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEIIAQIAAAACAAAAAAACAAAAAAAAA=</HashCode>
       <FileName>Classes\Personne.cs</FileName>
     </TypeIdentifier>
   </Class>

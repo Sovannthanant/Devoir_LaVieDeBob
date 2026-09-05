@@ -6,14 +6,16 @@ namespace LaVieDeBob.Classes
         // Déclarations des propriétés.
         public string Nom { get; set; }
         public float Cout { get; set; }
-        public bool Faim { get; set; }
+        public bool Faim { get; private set; }
+        public TimeSpan Pause { get; private set; }
 
         // Déclaration de constructeur.
-        protected Animal(string nom_donne, float cout_donne)
+        protected Animal(string nom, float cout, TimeSpan pause)
         {
-            Nom = nom_donne;
-            Cout = cout_donne;
+            Nom = nom;
+            Cout = cout;
             Faim = false;
+            Pause = pause;
         }
 
         // Déclarations des méthodes.

@@ -51,6 +51,7 @@ namespace LaVieDeBob.Classes
                     $"Prenom/Nom = {Prenom} {Nom} | Emploi = {Emploi.Titre}";
             }
             /// Si la personne est non employé.
+            /// Partie inutile. Restant de l'ancien code, je trouvé ça intéressant.
             else
             {
                 return $"+-----+-----+-----+-----+\n" +
