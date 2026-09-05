@@ -32,18 +32,18 @@ do
             Console.WriteLine($"Le solde du compte est {Bob.Compte.Solde}$");
             break;
         case "2":
-            Utilitaires.PasserLeTemps(heure_actuelle, 8);
+            heure_actuelle = Utilitaires.PasserLeTemps(heure_actuelle, 8);
             Console.WriteLine($"Vous avez travaillé 8h et gagné {Bob.Travailler(8)}$. Il" +
                 $"est maintenant {heure_actuelle:f}");
             break;
         case "3":
-            // TODO : Passer le temps
+            heure_actuelle = Utilitaires.PasserLeTemps(heure_actuelle, 8);
             Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine($"Vous avez dormi 8h. Il est maintenant {heure_actuelle:f}");
             Console.ResetColor();
             break;
         case "4":
-            Utilitaires.PasserLeTemps(heure_actuelle, 2);
+            heure_actuelle = Utilitaires.PasserLeTemps(heure_actuelle, 2);
             Console.WriteLine($"Vous avez passé le temps de 2h. Il est maintenant {heure_actuelle:f}");
             break;
         case "5":
