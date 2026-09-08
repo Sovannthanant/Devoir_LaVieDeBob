@@ -2,6 +2,7 @@
 // +=====+=====+===== Devoir: La vie de Bob =====+=====+=====+
 using LaVieDeBob;
 using LaVieDeBob.Classes;
+// Shortcut pour les commentaires : Ctrl+K->C et Ctrl+K->U.
 
 // Déclaration de variables / Création des classes.
 TimeSpan pauseMitaine = new(10, 0, 0);
