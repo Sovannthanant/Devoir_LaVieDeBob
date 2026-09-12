@@ -18,19 +18,6 @@ namespace LaVieDeBob.Classes
             Pause = pause;
         }
 
-        // Déclarations des méthodes.
-        public void Manger()
-        {
-            /// Change le statue de faim positif en négatif.
-            if (Faim == true)
-            {
-                Faim = false;
-            }
-        }
-
-        /* public asbstract ___() {}, doit être mis dans les classes
-         enfants. */
-
         public string Exprimer()
         {
             /// Retourne le son de l'animal en Console.Write().

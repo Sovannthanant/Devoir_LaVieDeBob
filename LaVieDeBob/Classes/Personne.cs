@@ -34,12 +34,6 @@ namespace LaVieDeBob.Classes
             return salaireGagne;
         }
 
-        public void Nourrir(DateTime heureRepas)
-        {
-            /// TODO: Nourrir l'animal et retirer le montant du repas du compte bancaire.
-            throw new System.NotImplementedException();
-        }
-
         public override string ToString()
         {
             /// Retourne un string spécifique quand "Console.Write()".

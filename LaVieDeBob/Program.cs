@@ -21,7 +21,7 @@ DateTime dernierRepasRoboto = DateTime.Now;
 string choix;
 do
 {
-    Console.WriteLine("-----------------------------------------------------------------");
+    Console.WriteLine("-----PROGRAMME DE LA VIE DE BOB----------------------------------");
     Console.WriteLine($"Il est présentement {heureActuelle:f}. Choisir une option:");
     Console.WriteLine("1. Voir le solde du compte");
     Console.WriteLine("2. Travailler (8h)");
